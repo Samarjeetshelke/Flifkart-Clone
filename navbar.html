@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/your-font-awesome-version.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <title>Document</title>
+   
+</head>
+<body>
+    <div class="navbar spacearound">
+        <div class="empty">
+
+        </div>
+            <div class="logo">
+                <img src="logo.png" class="nospace" alt="logo">
+                <a class="txt nospace" href="">Explore <span>Plus</span><i class= "a fa fa-star-o"></i></a>
+                
+            </div>
+        <!-- <div class="nav-links"> -->
+            <div class="item search" style="padding-right: 0px;">
+                <input type="search" placeholder="   Search for product,brand and more">
+                <i class="fa faxx fa-search" style="color: #2874f0;  width:30px;padding:0px;margin:0px; padding-top:8px; padding-left:15px;"></i>
+                <!-- <i class="fa-solid fa-magnifying-glass" style="color: #2874f0;"></i>   -->
+             </div>
+
+             <div  class="item button hcenter " style="">
+                <button class="vcenter" href="" onmouseover="over()">Login</button>
+                <div  id="dropdown-nav">
+                    <a href="#" style="padding-left: 20px;">New custome?<span  style="margin-left:35px;font-weight:bold;color: #2874f0;">Sign Up</span></a>
+                    <a href="#"><i class="fa faxx fa-user" ></i>My Profile</a>
+                    <a href="#"><i class="fa faxx fa-send"></i>Orders</a>
+                    <a href="#"><i class="fa faxx fa-heart"></i>Wishlist</a>
+                    <a href="#"><i class="fa faxx fa-heart"></i>Rewards</a>
+                    <a href="#"><i class="fa faxx fa-gift"></i>Gift Cards</a>
+                </div> 
+             </div>
+
+             <div class="item bas" style=""><a class="item vcenter" href="">Become a Seller</a>
+             </div>
+             <div class="item more"><a class="item vcenter"href="" onmousemove="over2()">More</a>
+                <i class="fa fa-caret-down" id="arrow" style="padding-left:2px;padding-top:3px;"></i>
+                <div  id="dropdown-nav2">
+                    <a href="#"><i class="fa faxx fa-user" ></i>Notification Prefrence</a>
+                    <a href="#"><i class="fa faxx fa-user" ></i>24*7 Customer Care</a>
+                    <a href="#"><i class="fa faxx fa-send"></i>Adverties</a>
+                    <a href="#"><i class="fa faxx fa-heart"></i>Download App</a>
+                    </div> 
+            </div>
+
+             <div class="item cart"><a class="item vcenter" href="" style="padding-left: 0px;"><i class="fa fa-shopping-cart" style="color: #ffffff; width:22px; margin-right:0px; padding-right: 0px;"></i>Cart</a>
+            </div>
+            <script>
+                function over(){
+                    const dnav=document.getElementById("dropdown-nav");
+                    if(dnav.style.display=='none'){
+                        dnav.style.display='block';
+                    }
+                    else{
+                        dnav.style.display='none';
+                    }
+                }
+
+                // function over3(){
+                //     const dnav=document.getElementById("dropdown-nav2");
+                //     const darrow=document.getElementById("arrow");
+                //         dnav.style.display='none';
+                //         darrow.classList.add('fa fa-caret-down');
+                       
+                // }
+                function over2(){
+                    const dnav=document.getElementById("dropdown-nav2");
+                    const darrow=document.getElementById("arrow");
+                    
+                     if(dnav.style.display=='none'){
+                         dnav.style.display='block';
+                         darrow.classList.add('fa fa-caret-up');
+                     }
+                     else{
+                         dnav.style.display='none';
+                         darrow.classList.add('fa fa-caret-down');
+                     }
+                }
+            </script>
+        
+        </div>
+        <!-- </div> -->
+    </div>
+</body>
+</html>
